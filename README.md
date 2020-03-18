@@ -1,12 +1,14 @@
 # Final Project
 
-### Project Title: 
+### Project Title: Career College- Mangement Dashboard
 
 Team Members: Lovjeet, Shruti
 
 ### Project Description/Outline: 
-Create a dashboard to visualize admissions, students operations and financial metrics for the management to view the overall business health.
+Objective of this project is to create a management dashboard to monitor performance of key parameters for a career college. 
+We will create a dashboard to visualize admissions, student operations and financial metrics for the management team to view the overall business health.
 
+Analytical tool will be used to collect data from multiple sources and machine learning will be applied to predict student drop outs.
 ### Project Tools:
 
 * Python Pandas
