@@ -9,12 +9,12 @@ Team Members: Lovjeet, Shruti
 
 ### Project Tools:
 
-Python Pandas
-Python Matplotlib
-HTML/CSS/Bootstrap
-JavaScript Plotly
-SQL Database
-scikit-learn
+* Python Pandas
+* Python Matplotlib
+* HTML/CSS/Bootstrap
+* JavaScript Plotly
+* SQL Database
+* scikit-learn
 
 ### Datasets to be Used:
 
