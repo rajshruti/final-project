@@ -2,7 +2,7 @@
 
 ### Project Title: Career College- Mangement Dashboard
 
-![Dashboard](/Images/Dashboard pic.jpg)
+![Dashboard](Images/Dashboard%20pic.jpg)
 
 Team Members: Lovjeet, Shruti
 
