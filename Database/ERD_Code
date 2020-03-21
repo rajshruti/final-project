@@ -1,0 +1,37 @@
+
+AdmissionsFlash
+-
+Rep_Name PK string
+Leads INT
+Appts INT
+Shows INT
+Enrols INT
+Starts INT
+App_Set decimal
+Show_Rate decimal
+Show_To_Enrollment decimal
+Enrollment_to_Start_Rate decimal
+Lead_to_start decimal
+Month string
+
+AdmissionsMasters
+-
+ContractCode varchar FK >- Attendance.Contract_Code
+Enrolment_Date DATE
+Rep_Name string FK >- AdmissionsFlash.Rep_Name
+Start_Date DATE
+Program string
+Funding_Source_Name string FK  >- Attendance.Funding_Source_Name
+
+Attendance
+-
+Contract_Code varchar PK
+Time_In DATE
+Sort_Field DATE
+weekend DATE
+timeout DATE
+attendanceid INT
+Total_Time INT
+contract_start_date DATE
+scheduled_end_date DATE	
+Funding_Source_Name string
