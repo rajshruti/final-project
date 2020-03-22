@@ -9,18 +9,18 @@ CREATE TABLE "AdmissionsFlash" (
 	"Shows" INT,
 	"Enrols" INT,
 	"Starts" INT,
-	"App_Set" DECIMAL,
-	"Show_Rate" DECIMAL,
-	"Show_To_Enrollment" DECIMAL,
-	"Enrollment_to_Start_Rate" DECIMAL,
-	"Lead_to_Start" DECIMAL,
+	"App_Set" decimal,
+	"Show_Rate" decimal,
+	"Show_To_Enrollment" decimal,
+	"Enrollment_to_Start_Rate" decimal,
+	"Lead_to_Start" decimal,
 	"Month" varchar,
-	"Unique_Rep" varchar,
-	CONSTRAINT "Unique_Rep" PRIMARY KEY (
-		"Unique_Rep"
+	CONSTRAINT "Rep_Name" PRIMARY KEY (
+		"Rep_Name"
 		)
 );
 
+SELECT * FROM AdmissionsFlash ;
 
 
 
@@ -39,6 +39,10 @@ CREATE TABLE "AdmissionsMasters" (
 		)
 
 );
+
+SELECT * FROM AdmissionsMasters;
+
+
 
 DROP TABLE IF EXISTS "Attendance";
 
@@ -60,6 +64,10 @@ CREATE TABLE "Attendance" (
 	
 );
 
+SELECT * FROM Attendance;
+
+
+
 DROP TABLE IF EXISTS "AccountsPayable";
 
 CREATE TABLE "AccountsPayable" (
@@ -69,35 +77,51 @@ CREATE TABLE "AccountsPayable" (
 	"31 - 60" INT,
 	"61 - 90" INT,
 	"> 90" INT,
-	"TOTAL" INT
+	"TOTAL" INT,
+	CONSTRAINT "Particulars" PRIMARY KEY (
+		"Particulars"
+		)
 	
 );
+
+SELECT * FROM AccountsPayable
 
 
 
 DROP TABLE IF EXISTS "AccountsReceivableDOM";
 
 CREATE TABLE "AccountsReceivableDOM" (
-    "ContractCode" varchar,
+    "Sr. No." varchar,
+	"ContractCode" varchar,
 	"Program" varchar,
 	"Current" varchar,
 	"0-30" INT,
 	"31-60" INT,
 	"60-90" INT,
-	"90 or more" INT
+	"90 or more" INT,
+	CONSTRAINT "ContractCode" PRIMARY KEY (
+		"ContractCode"
+		)
 	
 );
+
+SELECT * FROM AccountsReceivableDOM
 
 DROP TABLE IF EXISTS "AccountsReceivableINT";
 
 CREATE TABLE "AccountsReceivableINT" (
-    "ContractCode" varchar,
+    "Sr. No." varchar,
+	"ContractCode" varchar,
 	"Program" varchar,
 	"Current" varchar,
 	"0-30" INT,
 	"31-60" INT,
 	"60-90" INT,
-	"90 or more" INT
-	
+	"90 or more" INT,
+	CONSTRAINT "ContractCode" PRIMARY KEY (
+		"ContractCode"
+		)
 	
 );
+
+SELECT * FROM AccountsReceivableINT
