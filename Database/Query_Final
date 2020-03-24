@@ -15,10 +15,8 @@ CREATE TABLE "AdmissionsFlash" (
 	"Enrollment_to_Start_Rate" DECIMAL,
 	"Lead_to_Start" DECIMAL,
 	"Month" varchar,
-	"Unique_Rep" varchar,
-	CONSTRAINT "Unique_Rep" PRIMARY KEY (
-		"Unique_Rep"
-		)
+	"Unique_Rep" varchar
+
 );
 
 
@@ -33,10 +31,7 @@ CREATE TABLE "AdmissionsMasters" (
 	"RepName" varchar,
 	"StartDate" DATE,
 	"Program" varchar,
-	"Funding_Source_Name" varchar,
- 	CONSTRAINT "ContractCode" PRIMARY KEY (
-		"ContractCode"
-		)
+	"Funding_Source_Name" varchar
 
 );
 
@@ -44,19 +39,13 @@ DROP TABLE IF EXISTS "Attendance";
 
 CREATE TABLE "Attendance" (
     "ContractCode" varchar,
-	"TimeIn" DATE,
-	"SortField" DATE,
-	"weekend" DATE,
-	"timeout" DATE,
+	"Date" DATE,
 	"attendanceid" INT,
 	"TotalTime" INT,
 	"contractstartdate" DATE,
 	"scheduledenddate" DATE,	
 	"FundingSourceName" varchar,
-	"Month" varchar,
-	CONSTRAINT "ContractCode" PRIMARY KEY (
-		"ContractCode"
-		)
+	"Month" varchar
 	
 );
 
