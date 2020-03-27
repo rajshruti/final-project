@@ -8,7 +8,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Dashboard</a>
+    <a class="navbar-brand" href="/">Dashboard</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,23 +16,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="admissions.html">Admissions</a>
+              <a class="nav-link" href="/admissions">Admissions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="stdntservices.html">Student Services</a>
+              <a class="nav-link" href="/stdntservices">Student Services</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="finance.html">Finance<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/finance">Finance<span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>
 </nav>
 <body>
     <div class="card">
-        <img class="card-img-top" src="Images/db.png" alt="Card image cap">
+        <img class="card-img-top" src="{{url_for('static', filename='db.png')}}" alt="Card image cap">
         <div class="card-body">
 		<br>
 			<div class="alert alert-secondary" align="center" role="alert">
