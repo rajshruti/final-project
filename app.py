@@ -16,6 +16,11 @@ conn = psycopg2.connect(user="postgres", password="root123", host="localhost", p
 @app.route("/")
 def home():
     return render_template("index.html")
+@app.route('/predict', methods=['GET', 'POST'])
+def predict():
+    if request.method == 'POST':
+        # Then get the data from the form
+        tag = request.form['tag']
 @app.route("/admissions")
 def admissions():
     return render_template("admissions.html")
