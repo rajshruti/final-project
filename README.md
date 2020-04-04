@@ -14,10 +14,9 @@ Analytical tool will be used to collect data from multiple sources and machine l
 ### Project Tools:
 
 * Python Pandas
-* Python Matplotlib
 * HTML/CSS/Bootstrap
-* JavaScript Plotly
 * SQL Database
+* Tableau
 * scikit-learn
 
 ### Datasets to be Used:
